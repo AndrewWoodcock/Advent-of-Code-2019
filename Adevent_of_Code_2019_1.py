@@ -24,9 +24,9 @@ def get_req_fuel_recur(mass: int, fuel_sum=0) -> int:
 def main():
     module_mass_list = get_file_data(module_masses)
     fuel_list = map(get_req_fuel, module_mass_list)
-    print(sum(fuel_list))
+    print("Part 1 solution is: {0}".format(sum(fuel_list)))
     re_fuel_list = map(get_req_fuel_recur, module_mass_list)
-    print(sum(re_fuel_list))
+    print("Part 2 solution is: {0}".format(sum(re_fuel_list)))
 
 
 if __name__ == '__main__':
