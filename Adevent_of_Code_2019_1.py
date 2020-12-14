@@ -14,7 +14,6 @@ def get_req_fuel(module: int) -> int:
 
 def get_req_fuel_recur(mass: int, fuel_sum=0) -> int:
     fuel = int(mass / 3) - 2
-    print(fuel)
     if fuel <= 0:
         return fuel_sum
     else:
